@@ -1,0 +1,21 @@
+<div>
+
+  <label for="" (ngModel)="person.name">Nombre</label>
+  <input type="text" name="" id="" placeholder="nombre">
+
+  <label for="" (ngModel)="person.sex">Sexo</label>
+  <input type="text" name="" id="">
+
+  <label for="" (ngModel)="person.gender">Género</label>
+  <input type="text">
+
+  <button (click)="sendPerson()">Crear persona</button>
+
+</div>
+
+
+<div>
+  <div *ngFor="let person of p">
+    <p> {{person.id}} {{person.name}} {{person.gender}}  {{person.sex}}</p>
+  </div>
+</div>
